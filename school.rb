@@ -19,14 +19,11 @@ class School
                   }
 
   def self.best_suited_for(array)
-    # you must have more than five interests
     return '' unless array.delete_if {|x| x == 0}.count == 5
-    # map your level of interest vs existing courses
     new_array = {}
     COURSES.each_with_index do |g, i|
       new_array[g] = array[i]
     end
-    # map school course with school course rating
     other_array = {}
     SCHOOL_DATA.each do |school|
       h = school.last[:courses].zip(school.last[:course_rating])

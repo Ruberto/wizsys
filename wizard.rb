@@ -17,5 +17,3 @@ class Wizard
     end
   end
 end
-
-puts Wizard.new("Humpfry Bumblebat", [1,9,0,3,6,0,8,0,0,0,0,0,0]).best_school

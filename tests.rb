@@ -1,6 +1,8 @@
 require_relative './wizard'
 
-# What is wrong with this spec? what does it tell us? how can we improve it?
+# What is wrong with this spec?
+# What does it tell us about the code we are working with?
+# How can we improve this test?
 
 describe 'Wizzards going to schools that may be good for them' do
   context 'a wizzard goes to school ' do
