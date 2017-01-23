@@ -7,9 +7,9 @@ The purpose of the code: To help students know what schools will help them impro
 their interests(as you will come to know some schools are better than others, the same will be said of wizards & witches).
 
 What the code is doing now.
-A school has a list of courses(SCHOOL_DATA) and a list of ratings for each course (given by the united magic ratings agency on a scale from from 0 to 100).
+A school has a list of courses(`SCHOOL_DATA`) and a list of ratings for each course (given by the united magic ratings agency on a scale from from 0 to 100).
 
-A child when applying to the school should submit his name and at least 5 subjects he is interested in, the order of the subjects coincides with a list of all the subjects available(COURSES).
+A child when applying to the school should submit his name and at least 5 subjects he is interested in, the order of the subjects coincides with a list of all the subjects available(`COURSES`).
 
 We compare the list of subjects a student submits with each subjects interest score(out of 10) with all the subjects from the different schools and their rating's. Then work out which school will be the best overall for the student.
 
@@ -17,3 +17,19 @@ We compare the list of subjects a student submits with each subjects interest sc
 The code is centuries old and needs a fair amount of refactoring.
 
 Use all the knowledge at your disposal to manage the dependencies wisely.
+
+## Bonus 
+
+Improve the validations, we need to ensure that no bad apples get into good schools. 
+
+If the wizard applying has a strong disposition towards the 'Dark arts' and 'Dueling' this may be an early indicator. Weightings should be adjusted for him to attend schools that are not so savery, 
+namely `Durmstrang Institute` and `Castelobruxo`
+
+
+## Tips
+
+Everything is permitted, you are allowed to change everything from the data store, to the creating of new classes and modules. `
+
+Use well written tests to shape your design. 
+
+Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves the internal structure. - _Martin Fowler_
