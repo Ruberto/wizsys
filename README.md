@@ -25,7 +25,7 @@ Use all the knowledge at your disposal to manage the dependencies _wisely_.
 Tips 
 ----
 1. There is a spec written. you can run it by calling `bundle exec rspec test.rb`
-2. Debuggers are also suggested if you have `byebug` installed you can easily debug the code by adding `require 'byebug'` at the top of the file.
+2. Debuggers are also suggested if you have `byebug` installed you can easily debug the code by adding `require 'byebug'` at the top of the test.rb file.
 3. All things are permitted, you can rewrite the whole application if need be or to save time refactor what is there. 
 4. You can change the data structures of `School::SCHOOL_DATA[:courses]` and `School::SCHOOL_DATA[:course_rating]`
 5. Start with the simple tricks learnt today
@@ -36,7 +36,7 @@ Tips
 
 ## Bonus 
 
-Improve the validations, we need to ensure that no bad apples get into good schools. 
+Improve the validations, we need to ensure that no bad apples get into good schools.. The `FoeGlass` class may need adjusting. 
 
 If the wizard applying has a strong disposition towards the 'Dark arts' and 'Dueling' this may be an early indicator. Weightings should be adjusted for him to attend schools that are not so savery, 
 namely `Durmstrang Institute` and `Castelobruxo`
