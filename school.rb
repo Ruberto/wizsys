@@ -1,4 +1,6 @@
-require "json"
+# frozen_string_literal: true
+
+require 'json'
 
 class School
   COURSES = ["Muggle Studies", "Wand Practice", "Defence against the dark arts", "Herbology", "Quidditch", "Advanced Broom making", "Scrying", "Potions", "Dueling", "Advanced Animagus", "Magical Creatures studies", "Magical Creatures", "Magical banking"]
