@@ -1,4 +1,3 @@
-require_relative './foeglass'
 require_relative './school'
 
 class Wizard
@@ -12,7 +11,7 @@ class Wizard
     school = School.best_suited_for(interests)
     file = File.read "school_data.json"
     data = JSON.parse(file)
-    if school.empty? || FoeGlass.new(school, @name).is_deatheater?
+    if school.empty?
       "Sorry #{@name}, turns out you are going to be a squib"
     else
       "Congradulations #{@name}, You have been accepted at #{school}, which is in #{data[school]["location"]}."
