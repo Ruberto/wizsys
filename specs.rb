@@ -1,3 +1,4 @@
+require 'rspec'
 require_relative './wizard'
 
 # What is wrong with this spec?
@@ -11,6 +12,5 @@ describe 'Wizzards going to schools that may be good for them' do
     end
   end
 end
-
 
 # Add specs for your refactorings here

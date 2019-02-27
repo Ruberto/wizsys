@@ -10,10 +10,12 @@ class Wizard
 
   def best_school
     school = School.best_suited_for(interests)
+    file = File.read "school_data.json"
+    data = JSON.parse(file)
     if school.empty? || FoeGlass.new(school, @name).is_deatheater?
       "Sorry #{@name}, turns out you are going to be a squib"
     else
-      "Congradulations #{@name}, You have been accepted at #{school}, which is in #{School::SCHOOL_DATA[school][:location]}."
+      "Congradulations #{@name}, You have been accepted at #{school}, which is in #{data[school]["location"]}."
     end
   end
 end
